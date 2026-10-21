@@ -1,3 +1,639 @@
-<html>
-  <title>Hola mundo</title>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">Juan Felipe Calderón · Flexible, compliant, adaptive learning design</title>
+  <meta name="description" content="Research on flexibility, compliance and adaptivity in higher-education learning design, by Juan Felipe Calderón Maureira (Universidad Andrés Bello, University of Alberta)." data-i18n-attr="content:meta.desc">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body id="top">
+
+<!-- ============================ NAV ============================ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="engine2learn"><b>engine2learn</b><span data-i18n="brand.tag">Learning design research</span></a>
+  <nav class="menu" id="menu" aria-label="Main">
+    <a href="#story" data-i18n="nav.story">The thread</a>
+    <a href="#project" data-i18n="nav.project">Project</a>
+    <a href="#papers" data-i18n="nav.papers">Papers</a>
+    <a href="#team" data-i18n="nav.team">Team</a>
+    <a href="#about" data-i18n="nav.about">Researcher</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Language" data-i18n-attr="aria-label:nav.lang">
+    <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang="es" aria-pressed="false">ES</button>
+  </div>
+  <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu" data-i18n-attr="aria-label:nav.menu"><span></span><span></span></button>
+</header>
+
+<main>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="hero">
+  <div class="wrap hero-top">
+    <h1 data-i18n="hero.h1">Flexible, compliant, adaptive learning design</h1>
+    <div class="hero-sub">
+      <p class="lead" data-i18n="hero.lead">Research by Juan Felipe Calderón Maureira on how courses can change while they run, be checked against quality standards, and adapt in real time to each learner.</p>
+      <div class="cta-row">
+        <a class="btn btn-solid" href="#story" data-i18n="hero.cta1">Follow the thread ↓</a>
+        <a class="btn-text" href="mailto:juan.calderon@unab.cl" data-i18n="hero.cta2">Write to me</a>
+      </div>
+    </div>
+  </div>
+  <div class="fields">
+    <a class="field f-blue" href="#story" data-goto="3">
+      <h2 data-i18n="pillar.flex">Flexibility</h2>
+      <p data-i18n="hero.f1">Can a design change while it runs, without breaking?</p>
+    </a>
+    <a class="field f-red" href="#story" data-goto="5">
+      <h2 data-i18n="pillar.comp">Compliance</h2>
+      <p data-i18n="hero.f2">Can a design be checked against quality standards automatically?</p>
+    </a>
+    <a class="field f-orange" href="#story" data-goto="8">
+      <h2 data-i18n="pillar.adapt">Adaptivity</h2>
+      <p data-i18n="hero.f3">Can a design respond to each learner in real time?</p>
+    </a>
+  </div>
+</section>
+
+<!-- ============================ STORY (core animation) ============================ -->
+<section class="story" id="story">
+  <div class="wrap story-head reveal">
+    <h2 data-i18n="story.h">Three questions, one explicit design</h2>
+    <p class="lead" data-i18n="story.lead">Scroll to watch how flexibility, compliance and adaptivity grow from the same machine-readable learning design.</p>
+  </div>
+
+  <div class="wrap story-grid">
+    <!-- ---------- sticky stage ---------- -->
+    <div class="stage-col" id="stage-col">
+      <div class="stage" id="stage">
+        <svg id="stage-svg" viewBox="0 0 800 600" role="img" aria-labelledby="stage-title" preserveAspectRatio="xMidYMid meet" data-scene="1">
+          <title id="stage-title" data-i18n="stage.title">Animated diagram: flexibility, compliance and adaptivity all grow from one explicit learning design</title>
+          <defs>
+            <marker id="ah-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5F6577"/></marker>
+            <marker id="ah-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5471DD"/></marker>
+            <marker id="ah-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0L10 5L0 10z" fill="#E2604F"/></marker>
+            <marker id="ah-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0L10 5L0 10z" fill="#E58A1C"/></marker>
+          </defs>
+
+          <!-- ===== persistent base: the explicit design ===== -->
+          <g id="base" data-a="1,2,12">
+            <rect class="base-rect" x="40" y="505" width="720" height="82"/>
+            <text class="lbl" x="58" y="531" data-i18n="svg.base">Learning design: explicit and machine-readable</text>
+            <g class="chip" data-a="1,2,5,6,7,8,12"><rect x="56" y="545" width="160" height="30" rx="15"/><text x="136" y="565" text-anchor="middle" data-i18n="svg.objectives">objectives</text></g>
+            <g class="chip" data-a="1,2,3,4,5,6,7,8,12"><rect x="226" y="545" width="160" height="30" rx="15"/><text x="306" y="565" text-anchor="middle" data-i18n="svg.activities">activities</text></g>
+            <g class="chip" data-a="1,2,5,6,7,8,12"><rect x="396" y="545" width="160" height="30" rx="15"/><text x="476" y="565" text-anchor="middle" data-i18n="svg.assessments">assessments</text></g>
+            <g class="chip" data-a="1,2,3,4,8,9,10,12"><rect x="566" y="545" width="160" height="30" rx="15"/><text x="646" y="565" text-anchor="middle" data-i18n="svg.rules">rules</text></g>
+          </g>
+
+          <!-- ===== step 1: machine-readable ===== -->
+          <g data-s="1">
+            <text class="t-code" x="250" y="120">
+              <tspan x="250" fill="#5F6577">{</tspan>
+              <tspan x="270" dy="26"><tspan class="k">"@type"</tspan>: <tspan class="v">"Activity"</tspan>,</tspan>
+              <tspan x="270" dy="26"><tspan class="k">"name"</tspan>: <tspan class="v">"Pair coding task"</tspan>,</tspan>
+              <tspan x="270" dy="26"><tspan class="k">"supports"</tspan>: <tspan class="v">"objective-2"</tspan>,</tspan>
+              <tspan x="270" dy="26"><tspan class="k">"assessedBy"</tspan>: <tspan class="v">"quiz-3"</tspan></tspan>
+              <tspan x="250" dy="26" fill="#5F6577">}</tspan>
+            </text>
+          </g>
+
+          <!-- ===== step 2: three questions as three fields ===== -->
+          <g data-s="2" class="rise c-blue" style="--d:.05s">
+            <rect class="sfield" x="40" y="110" width="230" height="290"/>
+            <text class="t-big" x="62" y="162" data-i18n="pillar.flex">Flexibility</text>
+            <text class="t-body" x="62" y="204">
+              <tspan x="62" data-i18n="svg.q.flex1">Can a design change</tspan>
+              <tspan x="62" dy="24" data-i18n="svg.q.flex2">while it runs,</tspan>
+              <tspan x="62" dy="24" data-i18n="svg.q.flex3">without breaking?</tspan>
+            </text>
+          </g>
+          <g data-s="2" class="rise c-red" style="--d:.2s">
+            <rect class="sfield" x="285" y="110" width="230" height="290"/>
+            <text class="t-big" x="307" y="162" data-i18n="pillar.comp">Compliance</text>
+            <text class="t-body" x="307" y="204">
+              <tspan x="307" data-i18n="svg.q.comp1">Can we check</tspan>
+              <tspan x="307" dy="24" data-i18n="svg.q.comp2">a design against</tspan>
+              <tspan x="307" dy="24" data-i18n="svg.q.comp3">quality standards</tspan>
+              <tspan x="307" dy="24" data-i18n="svg.q.comp4">automatically?</tspan>
+            </text>
+          </g>
+          <g data-s="2" class="rise c-orange" style="--d:.35s">
+            <rect class="sfield" x="530" y="110" width="230" height="290"/>
+            <text class="t-big" x="552" y="162" data-i18n="pillar.adapt">Adaptivity</text>
+            <text class="t-body" x="552" y="204">
+              <tspan x="552" data-i18n="svg.q.adapt1">Can a design respond</tspan>
+              <tspan x="552" dy="24" data-i18n="svg.q.adapt2">to each learner?</tspan>
+            </text>
+            <text class="t-tag" x="552" y="374" data-i18n="svg.thisproject">This project</text>
+          </g>
+          <g data-s="2" style="--d:.5s" class="conns">
+            <rect class="conn c-blue-f" x="152" y="400" width="6" height="105"/>
+            <rect class="conn c-red-f" x="397" y="400" width="6" height="105"/>
+            <rect class="conn c-orange-f" x="642" y="400" width="6" height="105"/>
+          </g>
+
+          <!-- ===== tabs (steps 3-11) ===== -->
+          <g data-s="3-11" class="tab c-blue" data-a="3,4,8">
+            <rect x="40" y="24" width="230" height="44" rx="22"/>
+            <text x="62" y="52" data-i18n="pillar.flex">Flexibility</text>
+          </g>
+          <g data-s="3-11" class="tab c-red" data-a="5,6,7,8">
+            <rect x="285" y="24" width="230" height="44" rx="22"/>
+            <text x="307" y="52" data-i18n="pillar.comp">Compliance</text>
+          </g>
+          <g data-s="3-11" class="tab c-orange" data-a="8,9,10,11">
+            <rect x="530" y="24" width="230" height="44" rx="22"/>
+            <text x="552" y="52" data-i18n="pillar.adapt">Adaptivity</text>
+          </g>
+
+          <!-- ===== steps 3-4: flexibility ===== -->
+          <g data-s="3,4" class="c-blue">
+            <text class="cap" x="40" y="108" data-i18n="svg.flexlearn">FlexLearn: workflow + rules + constraints</text>
+            <g class="node"><rect x="60" y="210" width="170" height="64"/><text x="145" y="248" data-i18n="svg.wf.a">Pair coding task</text></g>
+            <g class="node"><rect x="315" y="210" width="170" height="64"/><text x="400" y="248" data-i18n="svg.wf.b">Peer review</text></g>
+            <g class="node"><rect x="570" y="210" width="170" height="64"/><text x="655" y="248" data-i18n="svg.wf.c">Reflection</text></g>
+            <path class="line" d="M230 242H311" marker-end="url(#ah-blue)"/>
+            <path class="line" d="M485 242H566" marker-end="url(#ah-blue)"/>
+          </g>
+          <g data-s="3,4" class="c-orange" style="--d:.45s">
+            <g class="node"><rect x="315" y="370" width="170" height="64"/><text x="400" y="408" data-i18n="svg.wf.sub">Substitute activity</text></g>
+            <path class="swap" data-a="4" d="M145 276V402H311" marker-end="url(#ah-orange)"/>
+            <path class="swap" data-a="4" d="M485 402H655V280" marker-end="url(#ah-orange)"/>
+          </g>
+          <g data-s="3" class="risk c-red" style="--d:.9s">
+            <rect x="300" y="312" width="200" height="34" rx="17"/>
+            <text x="400" y="335" text-anchor="middle" data-i18n="svg.risk">deadlock? unreachable?</text>
+          </g>
+          <g data-s="4" class="pill c-blue" style="--d:.3s">
+            <rect x="150" y="452" width="240" height="38" rx="19"/><text x="270" y="477" text-anchor="middle" data-i18n="svg.check1">✓ no deadlock</text>
+            <rect x="410" y="452" width="240" height="38" rx="19"/><text x="530" y="477" text-anchor="middle" data-i18n="svg.check2">✓ every state reachable</text>
+          </g>
+
+          <!-- ===== steps 5-6: compliance ===== -->
+          <g data-s="5,6" class="c-red">
+            <text class="cap" x="40" y="106" data-i18n="svg.align">Constructive alignment</text>
+            <g class="node"><rect x="40" y="150" width="150" height="64"/><text x="115" y="188" data-i18n="svg.objectives.t">Objectives</text></g>
+            <g class="node"><rect x="230" y="150" width="150" height="64"/><text x="305" y="188" data-i18n="svg.activities.t">Activities</text></g>
+            <g class="node"><rect x="420" y="150" width="150" height="64"/><text x="495" y="188" data-i18n="svg.assessments.t">Assessments</text></g>
+            <g class="node"><rect x="610" y="150" width="150" height="64"/><text x="685" y="188" data-i18n="svg.materials.t">Materials</text></g>
+            <path class="line" d="M190 182H226" marker-end="url(#ah-red)"/>
+            <path class="line" d="M380 182H416" marker-end="url(#ah-red)"/>
+            <path class="line" d="M570 182H606" marker-end="url(#ah-red)"/>
+          </g>
+          <g data-s="5" class="c-orange" style="--d:.5s">
+            <path class="swap" d="M115 216V290H495V220" marker-end="url(#ah-orange)"/>
+            <text class="cap c-orange-t" x="305" y="316" text-anchor="middle" data-i18n="svg.hidden">a link nobody wrote down</text>
+            <text class="lbl" x="40" y="130" data-i18n="svg.implicit">in Word and Excel designs, these links stay implicit</text>
+          </g>
+          <g data-s="6" class="c-red" style="--d:.1s">
+            <path class="line thick" d="M115 216V290H495V220" marker-end="url(#ah-red)"/>
+            <text class="cap c-red-t" x="350" y="316" text-anchor="middle" data-i18n="svg.explicit">explicit link</text>
+          </g>
+          <g data-s="6" class="c-red" style="--d:.45s">
+            <path class="line" d="M200 292V376" marker-end="url(#ah-red)"/>
+            <g class="node"><rect x="40" y="380" width="320" height="66"/><text x="200" y="409" data-i18n="svg.qm1">Automatic check</text><text class="sub" x="200" y="431" data-i18n="svg.qm2">Quality Matters standards</text></g>
+            <g class="node c-orange"><rect x="440" y="380" width="320" height="66"/><text x="600" y="409" data-i18n="svg.human1">A human decides</text><text class="sub" x="600" y="431" data-i18n="svg.human2">what to change</text></g>
+            <path class="line" d="M360 413H436" marker-end="url(#ah-red)"/>
+          </g>
+
+          <!-- ===== step 7: pipeline ===== -->
+          <g data-s="7" class="c-red" style="--d:.1s">
+            <g class="node"><rect x="40" y="170" width="116" height="92"/><text x="98" y="202" data-i18n="svg.p1">Upload</text><text class="sub" x="98" y="227" data-i18n="svg.p1a">design</text><text class="sub" x="98" y="244" data-i18n="svg.p1b">document</text></g>
+            <g class="node"><rect x="191" y="170" width="116" height="92"/><text x="249" y="202" data-i18n="svg.p2">Structure</text><text class="sub" x="249" y="227" data-i18n="svg.p2a">extractors</text><text class="sub" x="249" y="244" data-i18n="svg.p2b">→ JSON-LD</text></g>
+            <g class="node"><rect x="342" y="170" width="116" height="92"/><text x="400" y="202" data-i18n="svg.p3">Augment</text><text class="sub" x="400" y="227" data-i18n="svg.p3a">glossary</text><text class="sub" x="400" y="244" data-i18n="svg.p3b">retrieval (RAG)</text></g>
+            <g class="node"><rect x="493" y="170" width="116" height="92"/><text x="551" y="202" data-i18n="svg.p4">Reason</text><text class="sub" x="551" y="227" data-i18n="svg.p4a">analyst, then</text><text class="sub" x="551" y="244" data-i18n="svg.p4b">formatter</text></g>
+            <g class="node plain-ink"><rect x="644" y="170" width="116" height="92"/><text x="702" y="202" data-i18n="svg.p5">Report</text><text class="sub" x="702" y="227" data-i18n="svg.p5a">shown to</text><text class="sub" x="702" y="244" data-i18n="svg.p5b">the designer</text></g>
+            <path class="line" d="M156 216H187" marker-end="url(#ah-red)"/>
+            <path class="line" d="M307 216H338" marker-end="url(#ah-red)"/>
+            <path class="line" d="M458 216H489" marker-end="url(#ah-red)"/>
+            <path class="line" d="M609 216H640" marker-end="url(#ah-red)"/>
+            <path class="line thick" d="M40 140H760" opacity=".35"/>
+            <circle class="dot" r="7" fill="#E2604F" cy="140"><animateMotion dur="5s" repeatCount="indefinite" path="M40 0H760"/></circle>
+            <text class="lbl" x="400" y="320" text-anchor="middle" data-i18n="svg.stack">QM Validator · Vue · Flask · n8n · Supabase</text>
+            <text class="t-xl" x="400" y="392" text-anchor="middle" data-i18n="svg.pipe1">A pipeline,</text>
+            <text class="t-xl c-red-t" x="400" y="430" text-anchor="middle" data-i18n="svg.pipe2">not an oracle.</text>
+          </g>
+
+          <!-- ===== step 8: three levels ===== -->
+          <g data-s="8" class="rings">
+            <g class="c-red" style="--d:.05s"><circle class="ring" cx="230" cy="300" r="175"/><text class="ring-l" x="230" y="150" text-anchor="middle" data-i18n="pillar.comp">Compliance</text></g>
+            <g class="c-blue" style="--d:.3s"><circle class="ring" cx="230" cy="300" r="120"/><text class="ring-l" x="230" y="206" text-anchor="middle" data-i18n="pillar.flex">Flexibility</text></g>
+            <g class="c-orange" style="--d:.55s"><circle class="ring" cx="230" cy="300" r="62"/><text class="ring-l" x="230" y="305" text-anchor="middle" data-i18n="pillar.adapt">Adaptivity</text></g>
+          </g>
+          <g data-s="8" class="c-red" style="--d:.2s">
+            <path class="lead-line" d="M362 185H440"/><circle class="lead-dot" cx="362" cy="185" r="4"/>
+            <text class="t-lvl" x="452" y="182" data-i18n="svg.l.prog">Program</text>
+            <text class="t-sub2" x="452" y="204" data-i18n="svg.l.prog1">Quality assurance:</text>
+            <text class="t-sub2" x="452" y="224" data-i18n="svg.l.prog2">designs checked against standards</text>
+          </g>
+          <g data-s="8" class="c-blue" style="--d:.45s">
+            <path class="lead-line" d="M350 300H440"/><circle class="lead-dot" cx="350" cy="300" r="4"/>
+            <text class="t-lvl" x="452" y="297" data-i18n="svg.l.course">Course</text>
+            <text class="t-sub2" x="452" y="319" data-i18n="svg.l.course1">Flexible learning design:</text>
+            <text class="t-sub2" x="452" y="339" data-i18n="svg.l.course2">activities adjusted at runtime</text>
+          </g>
+          <g data-s="8" class="c-orange" style="--d:.7s">
+            <path class="lead-line" d="M284 331L330 412H440"/><circle class="lead-dot" cx="284" cy="331" r="4"/>
+            <text class="t-lvl" x="452" y="409" data-i18n="svg.l.learner">Learner</text>
+            <text class="t-sub2" x="452" y="431" data-i18n="svg.l.learner1">Real-time adaptive feedback</text>
+            <text class="t-sub2" x="452" y="451" data-i18n="svg.l.learner2">on programming tasks · this project</text>
+          </g>
+          <g data-s="8" style="--d:.9s">
+            <text class="lbl" x="400" y="494" text-anchor="middle" data-i18n="svg.feeds">▲ the same traces and the same explicit design feed all three</text>
+          </g>
+
+          <!-- ===== step 9: GenAI proposes, rules decide ===== -->
+          <g data-s="9">
+            <g class="node plain"><rect x="40" y="200" width="210" height="80"/><text x="145" y="237" data-i18n="svg.g1">GenAI proposal</text><text class="sub" x="145" y="260" data-i18n="svg.g1a">probabilistic</text></g>
+            <path class="line c-ink" d="M252 240H316" marker-end="url(#ah-ink)"/>
+            <g class="gate c-blue"><rect x="320" y="166" width="160" height="148"/><text class="gt" x="400" y="233" data-i18n="svg.gate1">Verified</text><text class="gt" x="400" y="262" data-i18n="svg.gate2">rules</text></g>
+            <path class="line c-ink" d="M482 240H546" marker-end="url(#ah-ink)"/>
+            <g class="node c-orange"><rect x="550" y="200" width="210" height="80"/><text x="655" y="237" data-i18n="svg.g3">Feedback</text><text class="sub" x="655" y="260" data-i18n="svg.g3a">to the learner</text></g>
+            <text class="cap c-red-t" x="400" y="342" text-anchor="middle" data-i18n="svg.reject">✕ fails a rule → not shown</text>
+          </g>
+          <g data-s="9" style="--d:.5s">
+            <g class="chip2"><rect x="60" y="376" width="210" height="38" rx="19"/><text x="165" y="401" text-anchor="middle" data-i18n="svg.pred">Predictable</text><text class="sub-i" x="165" y="438" data-i18n="svg.pred1">same case, same feedback</text></g>
+            <g class="chip2"><rect x="295" y="376" width="210" height="38" rx="19"/><text x="400" y="401" text-anchor="middle" data-i18n="svg.audit">Auditable</text><text class="sub-i" x="400" y="438" data-i18n="svg.audit1">“why this message?”</text></g>
+            <g class="chip2"><rect x="530" y="376" width="210" height="38" rx="19"/><text x="635" y="401" text-anchor="middle" data-i18n="svg.align2">Aligned</text><text class="sub-i" x="635" y="438" data-i18n="svg.align21">in the instructor’s voice</text></g>
+            <text class="lbl" x="400" y="482" text-anchor="middle" data-i18n="svg.compl">formal methods are complemented, not replaced, by GenAI</text>
+          </g>
+
+          <!-- ===== step 10: system loop ===== -->
+          <g data-s="10" class="c-orange">
+            <path class="line thick" d="M700 178V128H100V174" marker-end="url(#ah-orange)"/>
+            <text class="cap c-orange-t" x="400" y="114" text-anchor="middle" data-i18n="svg.loop">feedback loop</text>
+            <g class="node plain"><rect x="41" y="180" width="118" height="84"/><text x="100" y="206" data-i18n="svg.s1">Student</text><text class="sub" x="100" y="228" data-i18n="svg.s1a">works on</text><text class="sub" x="100" y="244" data-i18n="svg.s1b">CS1 tasks</text></g>
+            <g class="node plain"><rect x="191" y="180" width="118" height="84"/><text x="250" y="206" data-i18n="svg.s2">Signals</text><text class="sub" x="250" y="228" data-i18n="svg.s2a">attempts, time,</text><text class="sub" x="250" y="244" data-i18n="svg.s2b">feedback views</text></g>
+            <g class="node plain"><rect x="341" y="180" width="118" height="84"/><text x="400" y="206" data-i18n="svg.s3">Learner state</text><text class="sub" x="400" y="228" data-i18n="svg.s3a">prior knowledge,</text><text class="sub" x="400" y="244" data-i18n="svg.s3b">engagement</text></g>
+            <g class="node plain"><rect x="491" y="180" width="118" height="84"/><text x="550" y="206" data-i18n="svg.s4">Rules</text><text class="sub" x="550" y="228" data-i18n="svg.s4a">task × type ×</text><text class="sub" x="550" y="244" data-i18n="svg.s4b">trigger</text></g>
+            <g class="node"><rect x="641" y="180" width="118" height="84"/><text x="700" y="206" data-i18n="svg.s5">Feedback</text><text class="sub" x="700" y="228" data-i18n="svg.s5a">cognitive</text><text class="sub" x="700" y="244" data-i18n="svg.s5b">metacognitive</text><text class="sub" x="700" y="260" data-i18n="svg.s5c">motivational</text></g>
+            <path class="line" d="M159 222H187" marker-end="url(#ah-orange)"/>
+            <path class="line" d="M309 222H337" marker-end="url(#ah-orange)"/>
+            <path class="line" d="M459 222H487" marker-end="url(#ah-orange)"/>
+            <path class="line" d="M609 222H637" marker-end="url(#ah-orange)"/>
+            <g class="node plain"><rect x="491" y="338" width="118" height="72"/><text x="550" y="364" data-i18n="svg.i1">Instructor</text><text class="sub" x="550" y="385" data-i18n="svg.i1a">designs rules,</text><text class="sub" x="550" y="401" data-i18n="svg.i1b">reads a digest</text></g>
+            <path class="line" d="M550 336V268" marker-end="url(#ah-orange)"/>
+            <g class="node plain"><rect x="641" y="338" width="118" height="72"/><text x="700" y="364" data-i18n="svg.f1">Safeguards</text><text class="sub" x="700" y="385" data-i18n="svg.f1a">rate limit,</text><text class="sub" x="700" y="401" data-i18n="svg.f1b">user controls</text></g>
+            <path class="line" d="M700 336V268" marker-end="url(#ah-orange)"/>
+            <text class="t-xl" x="40" y="352" data-i18n="svg.drive1">Instructor-authored</text>
+            <text class="t-xl c-orange-t" x="40" y="390" data-i18n="svg.drive2">rules drive the feedback.</text>
+            <circle class="dot" r="7" fill="#E58A1C"><animateMotion dur="7s" repeatCount="indefinite" path="M100 222H700V128H100V222"/></circle>
+          </g>
+
+          <!-- ===== step 11: crossover ===== -->
+          <g data-s="11" class="bars">
+            <text class="lbl" x="120" y="150" text-anchor="middle" data-i18n="svg.t0">T0 · start</text>
+            <text class="lbl" x="430" y="150" text-anchor="middle" data-i18n="svg.t1">T1 · switch</text>
+            <text class="lbl" x="730" y="150" text-anchor="middle" data-i18n="svg.t2">T2 · end</text>
+            <text class="t-lvl ink" x="40" y="222">AB</text>
+            <text class="t-lvl ink" x="40" y="300">BA</text>
+            <g class="bar bar-a" style="--d:.2s"><rect x="120" y="190" width="308" height="48"/><text x="274" y="220" text-anchor="middle" data-i18n="svg.adaptive">Adaptive feedback</text></g>
+            <g class="bar bar-s" style="--d:.7s"><rect x="432" y="190" width="308" height="48"/><text x="586" y="220" text-anchor="middle" data-i18n="svg.standard">Standard feedback</text></g>
+            <g class="bar bar-s" style="--d:.4s"><rect x="120" y="268" width="308" height="48"/><text x="274" y="298" text-anchor="middle" data-i18n="svg.standard">Standard feedback</text></g>
+            <g class="bar bar-a" style="--d:.9s"><rect x="432" y="268" width="308" height="48"/><text x="586" y="298" text-anchor="middle" data-i18n="svg.adaptive">Adaptive feedback</text></g>
+            <text class="lbl" x="120" y="362" data-i18n="svg.rand">random assignment at first login (or by lab section)</text>
+            <text class="lbl" x="120" y="386" data-i18n="svg.surveys">short surveys at T0, T1, T2 · traces throughout</text>
+            <g class="sites"><rect x="120" y="416" width="620" height="42" rx="21"/><text x="430" y="443" text-anchor="middle" data-i18n="svg.sites">UNAB ⇄ University of Alberta · same design, two contexts</text></g>
+          </g>
+
+          <!-- ===== step 12: convergence ===== -->
+          <g data-s="12" class="venn">
+            <circle cx="345" cy="235" r="120" fill="#8AA3F2" fill-opacity=".72"/>
+            <circle cx="455" cy="235" r="120" fill="#F6A094" fill-opacity=".72"/>
+            <circle cx="400" cy="330" r="120" fill="#F8BC5F" fill-opacity=".72"/>
+            <text class="vl" x="290" y="200" text-anchor="middle" data-i18n="pillar.flex">Flexibility</text>
+            <text class="vl" x="510" y="200" text-anchor="middle" data-i18n="pillar.comp">Compliance</text>
+            <text class="vl" x="400" y="392" text-anchor="middle" data-i18n="pillar.adapt">Adaptivity</text>
+            <text class="vc" x="400" y="266" text-anchor="middle" data-i18n="svg.onedesign">one design</text>
+            <text class="lbl" x="400" y="484" text-anchor="middle" data-i18n="svg.lever">a flexible, checkable design · one lever for adaptive feedback</text>
+          </g>
+        </svg>
+      </div>
+      <div class="controls" role="group" aria-label="Animation controls" data-i18n-attr="aria-label:ctrl.group">
+        <button class="ctl" id="prev" type="button" aria-label="Previous step" data-i18n-attr="aria-label:ctrl.prev">←</button>
+        <div class="dots" id="dots"></div>
+        <button class="ctl" id="next" type="button" aria-label="Next step" data-i18n-attr="aria-label:ctrl.next">→</button>
+        <button class="ctl ctl-play" id="play" type="button" aria-pressed="false"><span class="lbl-play" data-i18n="ctrl.play">▶ Play</span><span class="lbl-pause" data-i18n="ctrl.pause">❚❚ Pause</span></button>
+        <span class="count" id="count" aria-hidden="true">1 / 12</span>
+      </div>
+    </div>
+
+    <!-- ---------- scrolling steps ---------- -->
+    <div class="steps" id="steps">
+      <article class="step" data-step="1"><div class="card">
+        <h3 data-i18n="st1.h">Learning design, written so machines can read it</h3>
+        <p data-i18n="st1.p">Objectives, activities, assessments and rules are specified explicitly instead of living in Word and Excel files. That explicit specification is the substrate for everything that follows.</p>
+      </div></article>
+
+      <article class="step" data-step="2"><div class="card">
+        <h3 data-i18n="st2.h">Three questions about the same design</h3>
+        <p data-i18n="st2.p">Can a design <b class="w-blue">change</b> while it runs? Can it be <b class="w-red">checked</b> against quality standards? Can it <b class="w-orange">respond</b> to each learner? My work answers them one at a time, on one shared foundation.</p>
+      </div></article>
+
+      <article class="step" data-step="3"><div class="card k-blue">
+        <h3 data-i18n="st3.h">Flexibility: designs that can change while they run</h3>
+        <p data-i18n="st3.p">Courses are specified as static sequences; real classes are not. Swapping an activity at runtime can break a design: deadlocks, activities nobody can reach.</p>
+      </div></article>
+
+      <article class="step" data-step="4"><div class="card k-blue">
+        <h3 data-i18n="st4.h">Flexibility: change, with formal guarantees</h3>
+        <p data-i18n="st4.p"><b>FlexLearn</b> combines workflow, rules and pedagogical constraints, so a substitution keeps the design deadlock-free and every state reachable.</p>
+      </div></article>
+
+      <article class="step" data-step="5"><div class="card k-red">
+        <h3 data-i18n="st5.h">Compliance: designs that can be checked</h3>
+        <p data-i18n="st5.p">Constructive alignment links objectives, activities, assessments and materials. In document-based designs those links are implicit, so verifying them is slow, manual work.</p>
+      </div></article>
+
+      <article class="step" data-step="6"><div class="card k-red">
+        <h3 data-i18n="st6.h">Compliance: explicit links, automatic check, human decision</h3>
+        <p data-i18n="st6.p">Once the links are written down, a design can be checked against <b>Quality Matters</b> automatically. A person still decides what to change.</p>
+      </div></article>
+
+      <article class="step" data-step="7"><div class="card k-red">
+        <h3 data-i18n="st7.h">Compliance: AI inside a pipeline, not as an oracle</h3>
+        <p data-i18n="st7.p">A design document is uploaded, structured into JSON-LD, augmented with glossary retrieval, analysed and formatted by separate reasoning steps, and reported back to the designer.</p>
+      </div></article>
+
+      <article class="step" data-step="8"><div class="card k-orange">
+        <h3 data-i18n="st8.h">Adaptivity: one substrate, three levels</h3>
+        <p data-i18n="st8.p">The same traces and the same explicit design serve the <b class="w-orange">learner</b> (adaptive feedback), the <b class="w-blue">course</b> (flexible design) and the <b class="w-red">program</b> (quality assurance).</p>
+      </div></article>
+
+      <article class="step" data-step="9"><div class="card k-orange">
+        <h3 data-i18n="st9.h">Adaptivity: GenAI can propose, verified rules decide</h3>
+        <p data-i18n="st9.p">Rule-based feedback is predictable, auditable and aligned with the instructor’s voice. Formal methods are complemented, not replaced, by generative AI.</p>
+      </div></article>
+
+      <article class="step" data-step="10"><div class="card k-orange">
+        <h3 data-i18n="st10.h">Adaptivity: the feedback loop</h3>
+        <p data-i18n="st10.p">Signals from student work update a learner state; instructor-authored rules choose cognitive, metacognitive or motivational feedback; safeguards limit its rate and keep learners in control.</p>
+      </div></article>
+
+      <article class="step" data-step="11"><div class="card k-orange">
+        <h3 data-i18n="st11.h">The study: a crossover design</h3>
+        <p data-i18n="st11.p">Every student gets adaptive feedback for half of the deployment and standard feedback for the other half, at two universities. Each student is their own comparison, and carryover is tested rather than assumed away.</p>
+      </div></article>
+
+      <article class="step" data-step="12"><div class="card">
+        <h3 data-i18n="st12.h">One lever within learning design</h3>
+        <p data-i18n="st12.p">Adaptive feedback is not a stand-alone tutor. It works best inside a design that is flexible and checkable, which is why these three lines of work belong together.</p>
+      </div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PROJECT ============================ -->
+<section class="sec sec-blue" id="project">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 data-i18n="proj.h">Adaptive, real-time feedback in higher education</h2>
+      <p class="lead" data-i18n="proj.lead">A cross-institutional study of adaptive feedback in introductory programming (CS1) at Universidad Andrés Bello, Chile, and the University of Alberta, Canada.</p>
+    </div>
+
+    <p class="aim reveal" data-i18n="proj.aim">The aim: evaluate whether <mark>real-time, adaptive feedback</mark> improves self-regulation, learning and usability in introductory programming, across two institutional contexts.</p>
+
+    <ul class="rqs">
+      <li class="rq reveal"><h3><span data-i18n="rq1.h">Self-regulation</span> <small>RQ1</small></h3><p data-i18n="rq1.p">Adaptive vs. traditional feedback: planning, monitoring and strategy use.</p></li>
+      <li class="rq reveal"><h3><span data-i18n="rq2.h">Who benefits</span> <small>RQ2</small></h3><p data-i18n="rq2.p">Which learner characteristics predict effective tailoring.</p></li>
+      <li class="rq reveal"><h3><span data-i18n="rq3.h">What kind</span> <small>RQ3</small></h3><p data-i18n="rq3.p">Cognitive, metacognitive or motivational feedback: which helps most.</p></li>
+      <li class="rq reveal"><h3><span data-i18n="rq4.h">How much</span> <small>RQ4</small></h3><p data-i18n="rq4.p">Personalization without overwhelming learners.</p></li>
+    </ul>
+
+    <div class="duo">
+      <article class="panel reveal">
+        <h3 data-i18n="sites.h">Two sites, one design</h3>
+        <div class="site">
+          <h4>Universidad Andrés Bello</h4>
+          <p data-i18n="sites.unab">CS1 for engineering programs. The adaptive course was delivered between March and August 2026.</p>
+        </div>
+        <div class="site">
+          <h4>University of Alberta</h4>
+          <p data-i18n="sites.uofa">CS1-equivalent course. Instructor co-design and deployment are planned for the 2026–27 academic year, subject to ethics approval.</p>
+        </div>
+        <p class="note" data-i18n="sites.note">Companion strand: Quality Matters compliance of course designs at both sites.</p>
+      </article>
+
+      <article class="panel reveal">
+        <h3 data-i18n="meas.h">Light-touch measurement</h3>
+        <div class="stats">
+          <p><strong>~190 → ~33</strong><span data-i18n="meas.items">self-report items</span></p>
+          <p><strong>35–45 → 10–12</strong><span data-i18n="meas.min">minutes to complete</span></p>
+        </div>
+        <p class="note" data-i18n="meas.note">Self-regulation, motivation, self-efficacy, cognitive load, usability and learning, plus automatic behavioural traces.</p>
+      </article>
+    </div>
+
+    <h3 class="sub-h reveal" data-i18n="fb.h">Three kinds of feedback</h3>
+    <ul class="fbs">
+      <li class="fb reveal"><h4 data-i18n="fb1.k">Cognitive</h4><p class="fb-d" data-i18n="fb1.d">About the task: concept, error, strategy.</p><blockquote data-i18n="fb1.q">“The loop never updates <code>i</code>. Trace the first two iterations by hand.”</blockquote></li>
+      <li class="fb reveal"><h4 data-i18n="fb2.k">Metacognitive</h4><p class="fb-d" data-i18n="fb2.d">About planning and monitoring.</p><blockquote data-i18n="fb2.q">“Three runs, same error. What have you ruled out so far?”</blockquote></li>
+      <li class="fb reveal"><h4 data-i18n="fb3.k">Motivational</h4><p class="fb-d" data-i18n="fb3.d">About effort and confidence.</p><blockquote data-i18n="fb3.q">“You traced a harder problem than last week. Real progress.”</blockquote></li>
+    </ul>
+    <p class="fine reveal" data-i18n="fb.note">Illustrative CS1 examples, not actual messages.</p>
+
+    <div class="duo duo-b">
+      <article class="panel panel-light reveal">
+        <h3 data-i18n="trust.h">Designed for trust and fairness</h3>
+        <ul class="plain">
+          <li data-i18n="trust1"><b>Minimal risk</b>, voluntary participation, no academic penalty for opting out.</li>
+          <li data-i18n="trust2"><b>Nobody loses standard feedback</b>: the study varies how feedback is delivered, not whether.</li>
+          <li data-i18n="trust3"><b>Recruitment by the research team</b>, not the instructor, who never sees who consented.</li>
+          <li data-i18n="trust4"><b>Safeguards in the tool</b>: rate limiting, user controls, monitoring for overload.</li>
+          <li data-i18n="trust5"><b>Data</b> pseudonymized and access-controlled, under UofA REB and Chilean Law 19.628.</li>
+        </ul>
+      </article>
+      <article class="panel panel-light reveal">
+        <h3 data-i18n="contrib.h">What we hope to contribute</h3>
+        <ol class="contrib">
+          <li data-i18n="contrib1"><b>Evidence</b> on adaptive vs. standard feedback and self-regulation, in two contexts.</li>
+          <li data-i18n="contrib2"><b>A feature catalogue</b> of learner signals that predict useful tailoring.</li>
+          <li data-i18n="contrib3"><b>A bridge</b> between adaptive feedback and flexible, quality-assured design.</li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PAPERS ============================ -->
+<section class="sec sec-paper" id="papers">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 data-i18n="papers.h">Papers and manuscripts</h2>
+      <p class="lead" data-i18n="papers.lead">Each line of work started as a paper. Filter by the question it answers.</p>
+    </div>
+
+    <div class="filters reveal" role="group" aria-label="Filter papers" data-i18n-attr="aria-label:papers.filter">
+      <button type="button" class="flt is-on" data-filter="all" data-i18n="papers.all">All</button>
+      <button type="button" class="flt f-blue" data-filter="flex" data-i18n="pillar.flex">Flexibility</button>
+      <button type="button" class="flt f-red" data-filter="comp" data-i18n="pillar.comp">Compliance</button>
+      <button type="button" class="flt f-orange" data-filter="adapt" data-i18n="pillar.adapt">Adaptivity</button>
+    </div>
+
+    <div class="papers" id="papers-grid">
+      <article class="paper reveal" data-pillar="adapt">
+        <div class="p-meta"><span class="tag t-orange" data-i18n="pillar.adapt">Adaptivity</span><span class="stat" data-i18n="stat.ongoing">Ongoing study</span><span class="year">2026–27</span></div>
+        <div class="p-body">
+          <h3>Adaptive, Real-Time Feedback in Higher Education: a cross-institutional study in introductory programming</h3>
+          <p class="auth"><strong>J. F. Calderón Maureira</strong> (PI), C. Demmans Epp</p>
+          <p class="venue">Universidad Andrés Bello · University of Alberta</p>
+          <p class="sum" data-i18n="pp.proj">Real-time adaptive feedback in CS1: effects on self-regulation, who benefits, which feedback types help most, and how much personalization is too much. Two-period AB/BA crossover.</p>
+        </div>
+      </article>
+
+      <article class="paper reveal" data-pillar="comp">
+        <div class="p-meta"><span class="tag t-red" data-i18n="pillar.comp">Compliance</span><span class="stat" data-i18n="stat.prep">In preparation</span><span class="year">2026</span></div>
+        <div class="p-body">
+          <h3>Making Instructional Quality Computable: A JSON-LD Specification and an Agentic System for Evaluating Compliance with Instructional Design Standards</h3>
+          <p class="auth">M. Gil-Oyarzun, <strong>J. F. Calderón</strong>, M. E. Truyol, M. Quezada-Espinoza</p>
+          <p class="venue" data-i18n="venue.tlt">Target: IEEE Transactions on Learning Technologies</p>
+          <p class="sum" data-i18n="pp.merged">Merges the two compliance papers: a JSON-LD specification whose compliance checks are constraints over the design graph, and QM Validator, a web-based agentic pipeline built with n8n.</p>
+        </div>
+      </article>
+
+      <article class="paper reveal" data-pillar="comp">
+        <div class="p-meta"><span class="tag t-red" data-i18n="pillar.comp">Compliance</span><span class="stat" data-i18n="stat.pub">Published</span><span class="year">2026</span></div>
+        <div class="p-body">
+          <h3>A System for Evaluating Compliance with Instructional Design Standards: A Formal Specification Approach Using Semantically-Rich Models</h3>
+          <p class="auth">M. Gil-Oyarzun, <strong>J. F. Calderón</strong>, M. E. Truyol, M. Quezada-Espinoza</p>
+          <p class="venue">2026 IEEE Engineering Education World Conference (EDUNINE)</p>
+          <p class="sum" data-i18n="pp.edunine">A formal system that encodes learning outcomes, assessments, activities and their alignment as semantically enriched JSON-LD, enabling automated validation against standards such as Quality Matters, compatible with VLEs and AI agents.</p>
+          <p class="links"><a href="https://doi.org/10.1109/EDUNINE62390.2026.11547080" target="_blank" rel="noopener">doi.org/10.1109/EDUNINE62390.2026.11547080 ↗</a></p>
+        </div>
+      </article>
+
+      <article class="paper reveal" data-pillar="comp">
+        <div class="p-meta"><span class="tag t-red" data-i18n="pillar.comp">Compliance</span><span class="stat" data-i18n="stat.ms">Manuscript</span></div>
+        <div class="p-body">
+          <h3>A Formal Specification for Instructional Design: Enabling Flexibility and Automated Quality Assurance through Semantically-Rich Models</h3>
+          <p class="auth">M. Gil-Oyarzun, <strong>J. F. Calderón</strong>, M. E. Truyol, M. Quezada-Espinoza</p>
+          <p class="venue">Universidad Andrés Bello</p>
+          <p class="sum" data-i18n="pp.formal">A JSON-LD specification that makes constructive alignment explicit and machine-checkable, demonstrated in the redesign of an introductory programming course.</p>
+        </div>
+      </article>
+
+      <article class="paper reveal" data-pillar="flex">
+        <div class="p-meta"><span class="tag t-blue" data-i18n="pillar.flex">Flexibility</span><span class="stat" data-i18n="stat.prep">In preparation</span><span class="year">2026</span></div>
+        <div class="p-body">
+          <h3>Runtime-Flexible Learning Design with Formal Deadlock-Freedom and State-Reachability Guarantees in Technology-Enhanced Learning</h3>
+          <p class="auth"><strong>J. F. Calderón</strong>, M. Iturrieta, L. Rojas</p>
+          <p class="venue" data-i18n="venue.tlt">Target: IEEE Transactions on Learning Technologies</p>
+          <p class="sum" data-i18n="pp.flexlearn">FlexLearn: a workflow specification with pedagogical constraints that is provably deadlock-free and guarantees state reachability under four kinds of runtime flexibility, compared with RAG and LLM-based adaptive systems.</p>
+        </div>
+      </article>
+
+      <article class="paper reveal" data-pillar="flex">
+        <div class="p-meta"><span class="tag t-blue" data-i18n="pillar.flex">Flexibility</span><span class="stat" data-i18n="stat.pub">Published</span><span class="year">2024</span></div>
+        <div class="p-body">
+          <h3>Modeling a Workflow-Based Design Specification for Learning with Flexibility Characteristics, Absence of Deadlocks, and Achievability of Each State in TEL Applications</h3>
+          <p class="auth">M. Iturrieta, <strong>J. F. Calderón</strong>, L. A. Rojas</p>
+          <p class="venue">HCI International 2024 · Springer</p>
+          <p class="sum" data-i18n="pp.hcii">The conference version of FlexLearn: a workflow-based specification for flexible learning designs with no deadlocks and every state achievable.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TEAM ============================ -->
+<section class="sec sec-navy" id="team">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 data-i18n="team.h">Research team and collaborators</h2>
+      <p class="lead" data-i18n="team.lead">These lines of work are collaborative. The people below co-author the papers and share the studies.</p>
+    </div>
+
+    <ul class="people">
+      <li class="person p-orange reveal">
+        <h3>Carrie Demmans Epp</h3>
+        <p class="aff">University of Alberta</p>
+        <p class="role" data-i18n="role.carrie">Co-investigator, adaptive feedback study. Hosts the visiting professorship.</p>
+        <p class="tags"><span class="tag t-orange" data-i18n="pillar.adapt">Adaptivity</span></p>
+      </li>
+      <li class="person p-red reveal">
+        <h3>Martin Gil-Oyarzun</h3>
+        <p class="aff">Engineering School, Universidad Andrés Bello</p>
+        <p class="role" data-i18n="role.martin">First author of the compliance papers and the QM Validator system.</p>
+        <p class="tags"><span class="tag t-red" data-i18n="pillar.comp">Compliance</span></p>
+      </li>
+      <li class="person p-red reveal">
+        <h3>María Elena Truyol</h3>
+        <p class="aff">Engineering School, Universidad Andrés Bello</p>
+        <p class="role" data-i18n="role.truyol">Co-author of the compliance papers.</p>
+        <p class="tags"><span class="tag t-red" data-i18n="pillar.comp">Compliance</span> <a class="orcid" href="https://orcid.org/0000-0003-1153-4967" target="_blank" rel="noopener">ORCID ↗</a></p>
+      </li>
+      <li class="person p-red reveal">
+        <h3>Mónica Quezada-Espinoza</h3>
+        <p class="aff">Engineering School, Universidad Andrés Bello</p>
+        <p class="role" data-i18n="role.quezada">Co-author of the compliance papers.</p>
+        <p class="tags"><span class="tag t-red" data-i18n="pillar.comp">Compliance</span> <a class="orcid" href="https://orcid.org/0000-0002-0383-0179" target="_blank" rel="noopener">ORCID ↗</a></p>
+      </li>
+      <li class="person p-blue reveal">
+        <h3>Matías Iturrieta</h3>
+        <p class="aff">Universidad Andrés Bello</p>
+        <p class="role" data-i18n="role.iturrieta">Co-author of the FlexLearn papers.</p>
+        <p class="tags"><span class="tag t-blue" data-i18n="pillar.flex">Flexibility</span> <a class="orcid" href="https://orcid.org/0009-0000-6379-1768" target="_blank" rel="noopener">ORCID ↗</a></p>
+      </li>
+      <li class="person p-blue reveal">
+        <h3>Luis Rojas</h3>
+        <p class="aff">Universidad San Sebastián</p>
+        <p class="role" data-i18n="role.rojas">Co-author of the FlexLearn papers.</p>
+        <p class="tags"><span class="tag t-blue" data-i18n="pillar.flex">Flexibility</span> <a class="orcid" href="https://orcid.org/0000-0002-4446-227X" target="_blank" rel="noopener">ORCID ↗</a></p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================ ABOUT / PI ============================ -->
+<section class="sec sec-orange" id="about">
+  <div class="wrap about">
+    <figure class="portrait reveal">
+      <img src="assets/juan-felipe-calderon.jpg" width="170" height="170" alt="Portrait of Juan Felipe Calderón Maureira" data-i18n-attr="alt:pi.alt">
+    </figure>
+    <div class="about-copy reveal">
+      <h2>Juan Felipe Calderón Maureira, PhD</h2>
+      <p class="roles" data-i18n="pi.roles">Principal investigator. Associate Professor, Faculty of Engineering, Universidad Andrés Bello; Visiting Professor, University of Alberta.</p>
+      <p data-i18n="pi.bio1">I work on <b>learning design</b>, engineering education, quality assurance and learning technology: how courses can be specified formally, changed while they run, checked against quality standards, and adapted to each learner.</p>
+      <p data-i18n="pi.bio2">I am a member of UNAB’s Teaching Research and Academic Development Unit (UNIDA). In fall 2026 I am a visiting professor at the University of Alberta, working with Carrie Demmans Epp on real-time adaptive feedback in introductory programming.</p>
+      <p><a class="orcid-link" href="https://orcid.org/0000-0002-7248-4492" target="_blank" rel="noopener">ORCID 0000-0002-7248-4492 ↗</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="sec sec-red" id="contact">
+  <div class="wrap contact">
+    <h2 data-i18n="contact.h">Let’s talk.</h2>
+    <p class="lead" data-i18n="contact.lead">Collaboration, questions about the studies, or an invitation to speak: write to me.</p>
+    <a class="mail" href="mailto:juan.calderon@unab.cl">juan.calderon@unab.cl</a>
+    <ul class="social">
+      <li><a href="mailto:juan.calderon@unab.cl"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 7l8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span data-i18n="contact.email">Email</span></a></li>
+      <li><a href="https://www.linkedin.com/in/REPLACE-WITH-YOUR-LINKEDIN" target="_blank" rel="noopener" id="lnk-linkedin"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10.5V16M8 7.8v.1M11.5 16v-3.2a2.3 2.3 0 0 1 4.6 0V16M11.5 10.5V16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>LinkedIn</span></a></li>
+      <li><a href="https://www.instagram.com/REPLACE-WITH-YOUR-INSTAGRAM" target="_blank" rel="noopener" id="lnk-instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="7" r="1.2" fill="currentColor"/></svg><span>Instagram</span></a></li>
+      <li><a href="https://orcid.org/0000-0002-7248-4492" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 8v8M12 8h1.5a4 4 0 0 1 0 8H12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>ORCID</span></a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>© 2026 Juan Felipe Calderón Maureira</p>
+    <p data-i18n="foot.aff">Universidad Andrés Bello · University of Alberta</p>
+    <a href="#top" data-i18n="foot.top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
